@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+.nb-theme-default [nbInput].shape-rectangle{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+label{
+    font-weight: 700;
+    font-size: 14px;
+    color:#465a95;
+}

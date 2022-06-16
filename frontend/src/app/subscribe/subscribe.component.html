@@ -1,0 +1,18 @@
+<nb-alert status="success" *ngIf="isAlert">
+    Your Newsletter Subscription Link has been sent to {{isEmailSent}}!
+</nb-alert>
+
+        <nb-card>
+            <nb-card-header>Newsletter form</nb-card-header>
+            <nb-card-body class="example-items-col">
+            <form (ngSubmit)="onSubmit()">
+              <label>Name *</label>
+              <input type="text" nbInput fullWidth fieldSize="medium" placeholder="Name" name="name" [(ngModel)]="subscribe.name">
+              <label>Email *</label>
+              <input type="text" nbInput fullWidth fieldSize="medium" placeholder="Email" name="email" [(ngModel)]="subscribe.email">
+              <br>
+              <button nbButton outline status="primary" type="submit" [disabled]="!subscribe.name || !subscribe.email">Subscribe</button>
+            </form>
+            </nb-card-body>
+            <nb-card-footer></nb-card-footer>
+          </nb-card>
