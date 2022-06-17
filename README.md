@@ -10,6 +10,15 @@ Follow the instructions below to setup the Backend:
 
 3. Configure `.env` environment file to your `mysql` User/DB credentials.
 
+```shell
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel_dev_task
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
 4. Run command `php artisan migrate`.
 
 5. Run command `php artisan db:seed` --create data with faker
