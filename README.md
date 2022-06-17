@@ -46,41 +46,50 @@ http://127.0.0.1:8000/api/send_subscription
 ```
 ```js
 {
-	"newsletter_id" : "",
-    "name" : "",
-    "email" : "",
-    "subject" : ""
+"newsletter_id" : "",
+"name" : "",
+"email" : "",
+"subject" : ""
 }
 ```
+
+
 
 ```
 http://127.0.0.1:8000/api/confirm_subscription
 ```
 ```js
 {
-	"newsletter_id" : "",
-    "email" : "",
-    "state" : "",
+"newsletter_id" : "",
+"email" : "",
+"state" : "",
 }
 ```
+
+
 ```
 http://127.0.0.1:8000/api/unsubscribe
 ```
 ```js
-	"id" : "",
-	"newsletter_id" : "",
+{
+"id" : "",
+"newsletter_id" : "",
+}
 ```
+
+
 ```
 http://127.0.0.1:8000/api/login
 ```
 
 ```js
 {
-	"email" : "",
-    "password" : "",
-    "remember_me" : false
+"email" : "",
+"password" : "",
+"remember_me" : false
 }
 ```
+
 
 ```
 http://127.0.0.1:8000/api/register
@@ -88,8 +97,8 @@ http://127.0.0.1:8000/api/register
 
 ```js
 {
-	"name" : "",
-	"email" : "",
-	"password" : ""
+"name" : "",
+"email" : "",
+"password" : ""
 }
 ```
