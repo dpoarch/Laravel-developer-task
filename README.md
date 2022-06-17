@@ -12,9 +12,11 @@ Follow the instructions below to setup the Backend:
 
 4. Run command `php artisan migrate`.
 
-5. Run command `php artisan passport:keys` to generate api keys.
+5. Run command `php artisan db:seed` --create data with faker
 
-6. Serve the backend with command `php artisan serve`.
+6. Run command `php artisan passport:keys` to generate api keys.
+
+7. Serve the backend with command `php artisan serve`.
 
 
 ## Frontend Setup
