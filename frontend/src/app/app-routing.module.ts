@@ -1,17 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ArticleComponent } from './article/article.component';
+import { HomeComponent } from './home/home.component';
 import { RedirectComponent } from './redirect/redirect.component';
-import { SubscribeComponent } from './subscribe/subscribe.component';
 
 const routes: Routes = [
   {
-    path: '', redirectTo: 'subscribe', pathMatch: 'full'
+    path: '', redirectTo: 'home', pathMatch: 'full'
   },
   {
-    path: 'subscribe', component: SubscribeComponent,
+    path: 'home', component: HomeComponent,
   },
   {
-    path: 'redirect/:id', component: RedirectComponent,
+    path: 'article/:id', component: ArticleComponent,
+  },
+  {
+    path: 'redirect/:email/:news_id', component: RedirectComponent,
   },
 ];
 

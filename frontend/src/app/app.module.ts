@@ -3,22 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SubscribeComponent } from './subscribe/subscribe.component';
 
-import { NbActionsModule, NbAlertModule, NbIconModule, NbThemeModule, NbToastrModule } from '@nebular/theme';
+import { NbActionsModule, NbAlertModule, NbIconModule, NbListModule, NbThemeModule, NbToastrModule } from '@nebular/theme';
 import { NbSidebarModule, NbLayoutModule, NbButtonModule, NbInputModule, NbCardModule } from '@nebular/theme';
 import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { RedirectComponent } from './redirect/redirect.component';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { HomeComponent } from './home/home.component';
+import { ArticleComponent } from './article/article.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    SubscribeComponent,
-    RedirectComponent
+    RedirectComponent,
+    HomeComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,7 @@ import { NbEvaIconsModule } from '@nebular/eva-icons';
     NbIconModule,
     HttpClientModule,
     NbToastrModule.forRoot(),
+    NbListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,13 @@
+<nb-list>
+    <nb-list-item _ngcontent-ixa-c93="" _nghost-ixa-c86="" role="listitem" *ngFor="let news of newsLetterList">
+        <nb-card>
+            <nb-card-body>
+                <article>
+                    <h2 class="h5">{{news.title}}</h2>
+                    <p>{{news.description.substring(0,300)}}...</p>
+                    <a nbButton outline status="primary" href="/article/{{news.id}}" >Read full article</a>
+                </article>
+            </nb-card-body>
+        </nb-card>
+    </nb-list-item>
+</nb-list>

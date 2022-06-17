@@ -10,27 +10,20 @@ import { ISubscribe } from '../subscribe/subscribe';
 })
 export class RedirectComponent implements OnInit {
   public routeSub: any;
+  public subscribeData = new ISubscribe;
   constructor(private service: SubscribeService, private route: ActivatedRoute) { }
-  subscribe = new ISubscribe();
-  public list = <ISubscribe[]>{};
-  
+
   ngOnInit(): void {
-    const id = this.route.snapshot.paramMap.get('id');
-    this.subscribe.id = id;
-    this.subscribe.state = 'active';
+    const email = this.route.snapshot.paramMap.get('email');
+    const news_id = this.route.snapshot.paramMap.get('news_id');
 
-    this.service.list(id).subscribe(response => this.list = response);
-    
-    console.log(this.list);
-    this.service.confirmSubscription(this.subscribe).subscribe(res => {
-      
+    this.subscribeData.newsletter_id = news_id;
+    this.subscribeData.email = email;
+    this.subscribeData.state = 'active';
+    console.log(this.subscribeData);
+    this.service.confirmSubscription(this.subscribeData).subscribe(res => {
+      console.log(res);
     })
-
-    
-  }
-
-  getList(){
-    
   }
 
 }
