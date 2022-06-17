@@ -41,9 +41,10 @@ http://127.0.0.1:8000/api/checkstatus/{id}
 ```
 
 ### [POST] Request
-```
-http://127.0.0.1:8000/api/send_subscription
-```
+
+1. URL http://127.0.0.1:8000/api/send_subscription
+
+JSON Request:
 ```js
 {
 "newsletter_id" : "",
@@ -55,9 +56,10 @@ http://127.0.0.1:8000/api/send_subscription
 
 
 
-```
-http://127.0.0.1:8000/api/confirm_subscription
-```
+
+2. URL http://127.0.0.1:8000/api/confirm_subscription
+
+JSON Request:
 ```js
 {
 "newsletter_id" : "",
@@ -67,9 +69,10 @@ http://127.0.0.1:8000/api/confirm_subscription
 ```
 
 
-```
-http://127.0.0.1:8000/api/unsubscribe
-```
+
+3. URL http://127.0.0.1:8000/api/unsubscribe
+
+JSON Request:
 ```js
 {
 "id" : "",
@@ -78,10 +81,10 @@ http://127.0.0.1:8000/api/unsubscribe
 ```
 
 
-```
-http://127.0.0.1:8000/api/login
-```
 
+4. URL http://127.0.0.1:8000/api/login
+
+JSON Request:
 ```js
 {
 "email" : "",
@@ -91,10 +94,10 @@ http://127.0.0.1:8000/api/login
 ```
 
 
-```
-http://127.0.0.1:8000/api/register
-```
 
+5. URL http://127.0.0.1:8000/api/register
+
+JSON Request:
 ```js
 {
 "name" : "",
