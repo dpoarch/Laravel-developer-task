@@ -26,3 +26,70 @@ Follow the instructions below to setup the Backend:
 3. Run command `npm start`
 
 4. Frontend application will run at `localhost:4200`
+
+## API Routes
+
+### [GET] Request
+```
+http://127.0.0.1:8000/api/newsletters"
+```
+```
+http://127.0.0.1:8000/api/newsletters/{id}
+```
+```
+http://127.0.0.1:8000/api/checkstatus/{id}
+```
+
+### [POST] Request
+```
+http://127.0.0.1:8000/api/send_subscription
+```
+```js
+{
+	"newsletter_id" : "",
+    "name" : "",
+    "email" : "",
+    "subject" : ""
+}
+```
+
+```
+http://127.0.0.1:8000/api/confirm_subscription
+```
+```js
+{
+	"newsletter_id" : "",
+    "email" : "",
+    "state" : "",
+}
+```
+```
+http://127.0.0.1:8000/api/unsubscribe
+```
+```js
+	"id" : "",
+	"newsletter_id" : "",
+```
+```
+http://127.0.0.1:8000/api/login
+```
+
+```js
+{
+	"email" : "",
+    "password" : "",
+    "remember_me" : false
+}
+```
+
+```
+http://127.0.0.1:8000/api/register
+```
+
+```js
+{
+	"name" : "",
+	"email" : "",
+	"password" : ""
+}
+```
