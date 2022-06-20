@@ -2,13 +2,13 @@
 
 
 ## Backend Setup
-Follow the instructions below to setup the Backend:
+Follow the instructions below to setup the backend:
 
-1. Open a CLI and navigate on `backend` directory.
+1. Open CLI and navigate to `backend` directory.
 
-2. Run command `composer install` to setup required package dependencies.
+2. Run command `composer install` to set up required package dependencies.
 
-3. Configure `.env` environment file to your `mysql` User/DB credentials.
+3. Configure `.env` environment file for your `mysql` User/DB credentials.
 
 ```shell
 DB_CONNECTION=mysql
@@ -23,7 +23,7 @@ DB_PASSWORD=
 
 5. Run command `php artisan db:seed` --create data with faker
 
-6. Run command `php artisan passport:keys` to generate api keys.
+6. Run command `php artisan passport:keys` to generate API keys.
 
 7. Serve the backend with command `php artisan serve`.
 
